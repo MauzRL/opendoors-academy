@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #212529;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+h2 {
+  color: #212529;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 10px ;
+}
+
+/* Navigation Bar */
+
+header {
+  height: 50px;
+  width: 100%;
+  max-width: 2500px;
+  margin: 0 auto;
+  background-color: #ffd79a;
+}
+nav {
+
+  
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 2500px;
+  margin: 0px auto;
+  padding: 0px 30px;
+  background-color: #ffd79a;
+  z-index: 1000;
+}
+
+
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+
+
+.nav-list {
+  height: 75px;
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  text-align: center;
+  margin: 0 10px;
+  align-items: center;
+}
+
+.nav-list li a {
+  transition: all 0.3s ease 0s;
+  color: #212529;
+  border-radius: 12px;
+  line-height: 75px;
+  padding: 20px;
+}
+
+.nav-list a:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #07085b;
+  color: #fff;
+}
+
+.logo img {
+  height: 75px;
+}
+
+/* Whatsapp */
+
+.whatsapp {
+  position: fixed;
+  z-index: 950;
+  bottom: 0;
+  right: 0;
+  font-size: 60px;
+  margin: 40px;
+  background-color: #45c654;
+  padding: 5px 25px;
+  border-radius: 500px;
+  color: #fff;
+}
+
+/* Banner Title */
+
+.banner {
+  max-width: 2500px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  background-color: #ffd79a;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner-text {
+  margin-left: 50px;
+}
+
+.banner-text h1 {
+  font-family: "Righteous", cursive;
+  font-size: 60px;
+  max-width: 75%;
+  color: #212529;
+}
+.banner-img img {
+  min-height: 200px;
+  max-height: 500px;
+  margin-right: 50px;
+}
+
+/* Buttons */
+
+.start{
+  width: 6.5em;
+  height: 2.3em;
+  margin: 0.5em;
+  background-color: #07085b;
+
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.start:hover{
+  color: #fff;
+}
+
+.start:after{
+  content: "";
+  background: #e03168;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.start:hover:after{
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Courses Description*/
+
+.courses-title {
+  max-width: 2500px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses-title p {
+  color: #f4a641;
+  font-size: 1.25rem;
+}
+
+.courses-container {
+  max-width: 2500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . .";
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.courses-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.courses-card img {
+  width: 50%;
+  margin: 20px;
+}
+
+
+
+.courses-card p {
+  font-size: 1.1rem;
+  max-width: 80%;
+}
+
+/* Clases online */
+
+.clases-online-title {
+  max-width: 2500px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clases-online-container {
+  display: flex;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.clases-online-img {
+  max-width: 40%;
+  padding: 20px;
+}
+
+.clases-online-img img {
+  position: relative;
+  z-index: -100;
+}
+
+
+
+.clases-online-text p {
+  font-size: 1.1rem;
+  max-width: 80%;
+  margin: 35px;
+}
+
+.clases-online-text p i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #e03168;
+}
+
+.clases-online-text button {
+  margin: 20px;
+}
+
+/* Button */
+
+.learn-more{
+  height: 2.3em;
+  margin: 0.5em;
+  padding: 10px;
+  background-color: #07085b;
+
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  
+}
+
+.learn-more:hover{
+  color: #fff;
+}
+
+.learn-more:after{
+  content: "";
+  background: #e03168;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.learn-more:hover:after{
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Saber Mas */
+
+.more {
+  display: flex;
+  background-color: #ffd79a;
+  max-width: 2500px;
+  margin: 0 auto;
+
+
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.more p {
+  font-size: 1.3rem;
+  max-width: 80%;
+  margin: 50px;
+  text-align: justify;
+}
+
+.more-container {
+    max-width: 2500px;
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . .";
+    margin-bottom: 20px;
+  }
+
+.triangulo {
+  width: 0; 
+  height: 0; 
+  border-top: 75px solid #fff;
+  border-right: 75px solid transparent; 
+  border-left: 75px solid transparent;
+}
+
+
+
+.more-card h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.more-card p {
+  text-align: justify;
+}
+
+/* Habilidades */
+
+.habilities-title h2 {
+  max-width: 2500px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilities-container {
+  margin: 0 auto;
+  max-width: 2500px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+}
+
+.habilities-card {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.level-logo {
+  font-size: 25px;
+  margin: 10px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  border: 2px #07085b dashed;
+  color: #07085b;
+  border-radius: 5px;
+  height: 50%;
+  padding: 0 5px;
+
+}
+
+.level-description {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+/* Certificados */
+
+.certificates-title {
+  max-width: 2500px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificates-container {
+  display: flex;
+  max-width: 2500px;
+  margin: 0 auto;
+  width: 90%;
+  justify-content:space-evenly;
+  padding: 0 60px;
+  align-items: center;
+}
+
+.certificates-img {
+  width: 50%;
+}
+
+
+.exams {
+  margin: 50px;
+}
+
+.exams h3 {
+  margin-bottom: 20px;
+}
+
+.exams p {
+  margin: 10px;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+/* About Us */
+
+.about-us-title {
+  max-width: 2500px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-container {
+  display: flex;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.about-us-container p {
+  font-size: 1.7rem;
+  line-height: 40px;
+  margin: 50px;
+  text-align: justify;
+
+}
+.about-us-img {
+  width: 200%;
+
+}
+
+/* footer */
+
+footer {
+  background-image:url(../img/wave.png);
+  margin: 100px  auto 0 auto;
+  height: 800px;
+  width: 100%;
+  max-width: 2500px;
+  background-repeat: no-repeat;
+  align-items: center;
+  align-content: center;
+
+}
+
+.footer-box {
+  width: 90%;
+  max-width: 2500px;
+  margin: 0 auto;
+  align-items: baseline;
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+
+}
+
+.payment-methods{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  margin-right: 300px;
+
+
+}
+
+.pay-logo-text {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."; 
+    align-items: center;
+    justify-items:center;
+    text-align: left;
+}
+
+
+
+
+.payment-methods img {
+  width: 60px;
+}
+
+.payment-methods a {
+  color:#212529;
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.contact-logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.contact-logo-text i {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.contact-logo-text a {
+  font-size: 1.3rem;
+  color: #212529;
+  
+
+}
+
+.contact-logo-text a:hover {
+  text-decoration: underline;
+}
+
+.designed {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.designed a {
+  color:#e03168 ;
+}
+
+.designed a:hover {
+  text-decoration: underline;
+}
