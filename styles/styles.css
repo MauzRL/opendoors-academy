@@ -7,6 +7,7 @@ html {
 body {
   font-family: "Roboto Condensed", sans-serif;
   color: #212529;
+  z-index: 0;
 }
 
 li,
@@ -48,13 +49,26 @@ nav {
   z-index: 1000;
 }
 
-
-
-.sticky {
-  position: sticky;
-  top: 0px;
-  width: 100%;
+.nav-toggle {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0px 20px;
+  line-height: 60px;
+  display: none;
 }
+
+@media only screen and (min-width: 900px) {
+
+  .sticky {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+  }
+}
+  
+
 
 
 .nav-list {
@@ -106,10 +120,12 @@ nav {
 
 .banner {
   max-width: 2500px;
+  width: 100%;
   margin: 0 auto;
   height: 600px;
   display: flex;
   background-color: #ffd79a;
+  z-index: -500;
 }
 
 .banner-container {
@@ -133,7 +149,6 @@ nav {
 .banner-img img {
   min-height: 200px;
   max-height: 500px;
-  margin-right: 50px;
 }
 
 /* Buttons */
@@ -189,6 +204,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .courses-title p {
@@ -528,7 +544,6 @@ footer {
   flex-direction: column;
   margin: 20px;
   align-items: center;
-  margin-right: 300px;
 
 
 }
@@ -601,4 +616,185 @@ footer {
 
 .designed a:hover {
   text-decoration: underline;
+}
+
+
+
+
+@media only screen and (max-width:900px) {
+
+  h2 {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+
+
+
+  header {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0px 10px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    background-color: #ffd79a;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0px;
+    height: calc(100% - 75px);
+    left: 100%;
+    transition: left 0.3s;
+    overflow-y: auto;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+  }
+
+  .nav-menu-visible {
+    left: 0;
+  }
+
+
+
+
+
+
+
+  
+}
+
+@media only screen and (max-width:768px){
+
+  .banner {
+  position: relative;
+
+  }
+
+
+/* Banner Title */
+.banner-img {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  z-index: -10;
+  opacity: 30%;
+}
+
+.banner-text {
+  margin: 0;
+}
+
+.title {
+  margin: 10px auto;
+text-align: center;
+
+}
+
+.banner-text p {
+  text-align: center;
+}
+
+.start {
+  margin-top: 60px;
+}
+
+/* Courses Description*/
+
+.courses-title p {
+  font-size: 1rem;
+}
+
+.courses-container {
+  display: flex; 
+  flex-direction: column;
+}
+
+
+
+.habilities-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact {
+  margin: 0;
+}
+
+.clases-online-img {
+  padding: 0;
+  max-width: 100%;
+}
+
+
+.clases-online-img img {
+  margin-top: 150px ;
+  position: absolute;
+  opacity: 30%;
+}
+
+.more-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.habilities-title {
+  text-align: center;
+}
+
+
+.certificates-container {
+  padding: 0;
+}
+.certificates-img {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+
+.certificates-img img {
+  opacity: 30%;
+}
+
+.about-us-container {
+  padding: 0;
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-container p {
+  margin: 0;
+  width: 90%;
+}
+
+.about-us-img {
+  position: absolute;
+  z-index: -10;
+  width: 95%;
+}
+
+.about-us-img img {
+  opacity: 30%;
+}
+
+
 }
