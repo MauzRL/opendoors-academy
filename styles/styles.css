@@ -749,6 +749,7 @@ text-align: center;
   margin-top: 150px ;
   position: absolute;
   opacity: 30%;
+  width: 70%;
 }
 
 .more-container {
@@ -797,4 +798,23 @@ text-align: center;
 }
 
 
+
+}
+
+@media only screen and (max-width:500px) {
+
+  .pay-logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pay-logo-text a {
+    margin: 5px;
+  }
+
+  .contact-logo-text i {
+    font-size: 20px;
+    margin: 2px;
+  }
+  
 }
