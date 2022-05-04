@@ -8,6 +8,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   color: #212529;
   z-index: 0;
+
 }
 
 li,
@@ -684,7 +685,8 @@ footer {
 @media only screen and (max-width:768px){
 
   .banner {
-  position: relative;
+    position: relative;
+  z-index: -15;
 
   }
 
@@ -713,8 +715,7 @@ text-align: center;
 }
 
 .start {
-  margin-top: 60px;
-}
+display: none;}
 
 /* Courses Description*/
 
@@ -812,9 +813,16 @@ text-align: center;
     margin: 5px;
   }
 
-  .contact-logo-text i {
-    font-size: 20px;
+  .contact-logo-text i, .contact-logo-text a{
+    font-size: 25px;
     margin: 2px;
+    content: "";
+  }
+
+  .contact a {
+    margin: 50px 0;
+    content: "a";
+    overflow: hidden;
   }
   
 }

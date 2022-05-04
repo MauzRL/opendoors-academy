@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    margin: 75px auto;
+    max-width: 2500px;
+    font-size: 4rem;
+
+}
+
+.pagos {
+    max-width: 2500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pagos h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.pagos p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
